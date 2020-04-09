@@ -1,6 +1,6 @@
 <template>
   <div>
-    <JSON :leftContent="leftContent" :rightContent="rightContent" />
+    <JSON :leftContent="leftContent" :rightContent="rightContent" leftEditable=true, leftCopyLinkEnabled=true, rightEditable=true, rightCopyLinkEnabled=true />
   </div>
 </template>
 

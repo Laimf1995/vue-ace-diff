@@ -17,7 +17,11 @@ export default {
       theme: '',
       mode: '',
       editor: null,
-      editorId: 'ace-diffy'
+      editorId: 'ace-diffy',
+      leftEditable: true,
+      leftCopyLinkEnabled: true,
+      rightEditable: true,
+      rightCopyLinkEnabled: true
     }
   },
   watch: {
@@ -27,7 +31,7 @@ export default {
       }
 
       const { left } = this.editor.getEditors()
-
+      left.editable = false
       left.setValue(this.leftContent)
       left.selection.clearSelection()
     },
@@ -71,10 +75,14 @@ export default {
       const editor = new AceDiffy({
         element: `#${this.editorId}`,
         left: {
-          content: this.leftContent || ''
+          content: this.leftContent || '',
+          editable: this.leftEditable,
+          copyLinkEnabled: this.leftCopyLinkEnabled
         },
         right: {
-          content: this.rightContent || ''
+          content: this.rightContent || '',
+          editable: this.rightEditable,
+          copyLinkEnabled: this.rightCopyLinkEnabled
         }
       })
       editor.create().then(function () {

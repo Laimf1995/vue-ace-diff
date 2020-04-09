@@ -1,5 +1,5 @@
 # vue-ace-diffy
-vue-ace-diffy is a Vue wrapper for [vue-ace-diff](https://github.com/svilenkov/vue-ace-diffy).
+在 [vue-ace-diff](https://github.com/svilenkov/vue-ace-diffy) 基础上新增属性
 
 添加了 editable，copyLinkEnabled相关属性
 
@@ -31,10 +31,10 @@ Create a new component and **extend** it with the `AceDiffy` module.
         leftContent: '', // Left pane diff text content
         rightContent: '', // Right pane diff text content
         editorId: 'ace-diffy', // AceDiffy element ID
-        leftEditable: true,
-        leftCopyLinkEnabled: true,
-        rightEditable: true,
-        rightCopyLinkEnabled: true
+        leftEditable: true, // Left pane diff text editable
+        leftCopyLinkEnabled: true, // Left pane diff text copy
+        rightEditable: true, // right pane diff text editable
+        rightCopyLinkEnabled: true // right pane diff text copy
       }
     },
     mounted () {

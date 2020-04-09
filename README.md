@@ -5,7 +5,7 @@
 
 # Install
 
-- `npm i --save git+https://git@github.com/laimeifeng/vue-ace-diffy.git`
+- `npm i --save git+https://git@github.com/laimeifeng/vue-ace-diff.git`
 
 # Getting started
 

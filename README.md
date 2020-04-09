@@ -1,11 +1,11 @@
 # vue-ace-diffy
-vue-ace-diffy is a Vue wrapper for [Ace-diff](https://github.com/ace-diff/ace-diff).
+vue-ace-diffy is a Vue wrapper for [vue-ace-diff](https://github.com/svilenkov/vue-ace-diffy).
 
-initial code extracted & modified from NPM package: `@sysco-middleware/vue-ace-diff`, due to source absence on github.
+添加了 editable，copyLinkEnabled相关属性
 
 # Install
 
-- `npm i --save git+https://git@github.com/svilenkov/vue-ace-diffy.git`
+- `npm i --save git+https://git@github.com/laimeifeng/vue-ace-diffy.git`
 
 # Getting started
 
@@ -30,7 +30,11 @@ Create a new component and **extend** it with the `AceDiffy` module.
       return {
         leftContent: '', // Left pane diff text content
         rightContent: '', // Right pane diff text content
-        editorId: 'ace-diffy' // AceDiffy element ID
+        editorId: 'ace-diffy', // AceDiffy element ID
+        leftEditable: true,
+        leftCopyLinkEnabled: true,
+        rightEditable: true,
+        rightCopyLinkEnabled: true
       }
     },
     mounted () {

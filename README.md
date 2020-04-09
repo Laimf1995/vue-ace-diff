@@ -31,10 +31,10 @@ Create a new component and **extend** it with the `AceDiffy` module.
         leftContent: '', // Left pane diff text content
         rightContent: '', // Right pane diff text content
         editorId: 'ace-diffy', // AceDiffy element ID
-        leftEditable: true, // Left pane diff text editable
-        leftCopyLinkEnabled: true, // Left pane diff text copy
-        rightEditable: true, // right pane diff text editable
-        rightCopyLinkEnabled: true // right pane diff text copy
+        leftEditable: null, // Left pane diff text editable
+        leftCopyLinkEnabled: null, // Left pane diff text copy
+        rightEditable: null, // right pane diff text editable
+        rightCopyLinkEnabled: null // right pane diff text copy
       }
     },
     mounted () {

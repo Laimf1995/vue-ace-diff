@@ -1,6 +1,6 @@
 <template>
   <div>
-    <JSON :leftContent="leftContent" :rightContent="rightContent" leftEditable=true, leftCopyLinkEnabled=true, rightEditable=true, rightCopyLinkEnabled=true />
+    <JSON :leftContent='{}' :rightContent='{}' />
   </div>
 </template>
 
@@ -14,46 +14,8 @@ export default {
   },
   data () {
     return {
-      leftContent: `{
-  "type": "record",
-  "name": "events",
-  "namespace": "com.sysco",
-  "doc": "This is a sample Avro schema to get you started. Please edit",
-  "fields": [
-    {
-      "name": "name",
-      "type": "string"
-    },
-    {
-      "name": "number1",
-      "type": "int"
-    },
-    {
-      "name": "number2",
-      "type": "float"
-    }
-  ]
-}`,
-      rightContent: `{
-  "type": "record",
-  "name": "events",
-  "namespace": "com.sysco.v2",
-  "doc": "Some usefull documentation",
-  "fields": [
-    {
-      "name": "name",
-      "type": "string"
-    },
-    {
-      "name": "number1",
-      "type": "int"
-    },
-    {
-      "name": "number2",
-      "type": "string"
-    }
-  ]
-}`
+      leftContent: '{}',
+      rightContent: '{}'
     }
   }
 }

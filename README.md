@@ -1,5 +1,5 @@
-# vue-ace-diffy
-在 [vue-ace-diff](https://github.com/svilenkov/vue-ace-diffy) 基础上新增属性
+# vue-ace-diff
+在 [vue-ace-diffy](https://github.com/svilenkov/vue-ace-diffy) 基础上新增属性
 
 添加了 editable，copyLinkEnabled相关属性
 
